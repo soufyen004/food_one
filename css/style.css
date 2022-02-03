@@ -1,4 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@font-face{
+    font-family: "Ginger";
+    src: url("../font/yellowginger.ttf");
+  }
+
 :root {
 
-    --color--primary : #666666;
+    --green:#27ae60;
+    --black:#192a56;
+    --light:#666;
+    --box-shadow:3px 1px 5px 4px #c9c9c9;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+
+/* header start*/
+
+nav{
+    width: 100%;
+    padding: 11px;
+    display: flex;
+    justify-content:space-between ;
+    text-transform: capitalize;
+    box-shadow: var(--box-shadow);
+}
+
+.logo span{
+    font:500 21px/1 'Ginger';
+    color: var(--green)
+}
+
+nav a{
+    text-decoration: none;
+    margin: 9px;
+    font: 300 17/1 '';
+    color: var(--light);
+    padding: 5px;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+
+.user-links a{
+    background-color: transparent;
+    color: var(--black);
+}
+.user-links a:hover{
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--green);
+}
+
+/* header end */
