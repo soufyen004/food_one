@@ -22,10 +22,6 @@ const swiper = new Swiper('.swiper', {
 // nav action on scroll
 
 let navbar = document.querySelector('nav');
-window.onscroll = function() {
-    if (document.body.scrollTop >= 30 || document.documentElement.scrollTop >= 30) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
+window.onscroll = ()=> {
+    document.body.scrollTop >= 30 || document.documentElement.scrollTop >= 30 ? navbar.classList.add("scrolled") : navbar.classList.remove("scrolled");
   };
