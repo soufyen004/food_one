@@ -9,7 +9,7 @@
     --green:#27ae60;
     --black:#192a56;
     --light:#666;
-    --box-shadow:3px 1px 5px 4px #c9c9c9;
+    --box-shadow:3px 5px 11px 5px #00000038;
 }
 
 *{
@@ -19,15 +19,41 @@
     font-family: Nunito;
 }
 
-/* header start*/
+.btn{
+    background-color: var(--green);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    margin: 9px 0;
+    font: 500 19px/1 'Nunito';
+}
 
+/* header start*/
+body{
+    height: 1000vh;
+}
+.sub-heading{
+    font: 500 19px/1 'Nunito';
+    margin-top: 17px;
+    color: var(--green);
+}
+.heading{
+    margin-bottom: 17px;
+    text-align: center;
+    color: var(--black);
+}
+.sub-heading , .heading{
+    text-align: center;
+    text-transform: capitalize;
+}
 nav{
     width: 100%;
     padding: 11px;
     display: flex;
     justify-content:space-between ;
     text-transform: capitalize;
-    box-shadow: var(--box-shadow);
+    transition: all .3s ease-in-out;
 }
 
 .logo span{
@@ -58,4 +84,81 @@ nav a:hover{
     border: 1px solid var(--green);
 }
 
-/* header end */
+.scrolled{
+    background: rgba(255, 255, 255, 0.781);
+    box-shadow: var(--box-shadow);
+    position:fixed;
+    z-index: 99;
+    top:0;
+    right: 0;
+
+}
+
+/* slider start */
+
+.swiper {
+    height: 500px;
+  }
+
+.swiper-slide{
+    display: flex;
+    justify-content: space-around;
+    margin: 19px 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color:rgba(72, 172, 72, 0.616) !important;
+
+}
+.swiper-slide .content{
+    height: 90%;
+    margin: auto;
+}
+.swiper-slide .content , .swiper-slide img{
+    padding: 2rem;
+    margin: 1rem;
+}
+.swiper-slide span{
+    text-transform: capitalize;
+    color: var(--black);
+    font: 900 24px/1 'Nunito';
+}
+
+.swiper-slide h3{
+    font: 700 19px/1 'Nunito';
+    color: var(--green);
+    margin-bottom: 17px;
+
+}
+
+  /* dishes section */
+
+  .dishes{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    justify-content: center;
+    grid-gap: 11px;
+  }
+  .dishes .box{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid var(--green);
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+      padding: 3px;
+  }
+  .dishes .box img{
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+  }
+  .box .box-icons{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+  }
+  .box i{
+      color: var(--light);
+  }
