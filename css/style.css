@@ -5,7 +5,7 @@
   }
 
 :root {
-
+    --white: rgba(223, 223, 223, 0.788);
     --green:#27ae60;
     --black:#192a56;
     --light:#666;
@@ -29,10 +29,8 @@
     font: 500 19px/1 'Nunito';
 }
 
-/* header start*/
-body{
-    height: 1000vh;
-}
+/* header */
+
 .sub-heading{
     font: 500 19px/1 'Nunito';
     margin-top: 17px;
@@ -94,7 +92,7 @@ nav a:hover{
 
 }
 
-/* slider start */
+/* slider */
 
 .swiper {
     height: 500px;
@@ -162,3 +160,125 @@ nav a:hover{
   .box i{
       color: var(--light);
   }
+
+/* reviews section */
+
+.reviews-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.reviews{
+    margin-top: 3rem;
+}
+.review{
+    padding: 2em 0;
+    margin: 2em 1em;
+    width: 30%;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+.review-image{
+    display:flex;
+    padding: 5px;
+}
+.review-image img{
+    border-radius: 50%;
+    margin: auto;
+    width: 70px;
+}
+.review .rating{
+    margin: 9px;
+    display:flex;
+    justify-content: center;
+    color: #666;
+}
+.review .rating i:nth-child(1),.review .rating i:nth-child(2),.review .rating i:nth-child(3){
+    color: gold;
+}
+
+/* menu section */
+.menu{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.menu .item{
+    margin: 1rem;
+    padding: 5px;
+    text-align: center;
+}
+.menu .item ul{
+    margin: 5px;
+    list-style: none;
+    display: flex;
+    justify-content:space-around ;
+}
+.menu-items .item span{
+    margin: 1rem;
+}
+.menu-items{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(250px,1fr));
+}
+
+/* footer */
+
+footer {
+    background-color: #192a56;
+    margin-bottom: 1em;
+}
+footer h3{
+    color: var(--white);
+    margin-bottom: 1em;
+    text-align: center;
+}
+.footer-container{
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-container .links li{
+    list-style: none;
+    margin: .5em;
+}
+.footer-container .links li a{
+    text-decoration: none;
+    color: var(--light);
+    text-transform: capitalize;
+}
+.footer-container .subscribe{
+    width: 300px;
+    color: var(--white);
+}
+
+.footer-container .address{
+    color: var(--light);
+    font: 700 1em/1 'roboto';
+    margin: .3em;
+    color: var(--white);
+}
+.footer-container .address img{
+    width: 200px;
+}
+.footer-container .subscribe input{
+    height: 33px;
+    padding: 5px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+}
+footer span{
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: .3em;
+    font: 1em/1;
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    bottom:0;
+    width: 100%;
+}
