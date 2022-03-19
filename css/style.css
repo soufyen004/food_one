@@ -38,10 +38,9 @@
 }
 .heading{
     margin-bottom: 17px;
-    text-align: center;
     color: var(--black);
 }
-.sub-heading , .heading{
+.sub-heading , .heading,.title{
     text-align: center;
     text-transform: capitalize;
 }
@@ -205,15 +204,44 @@ nav a:hover{
 }
 .menu .item{
     margin: 1rem;
-    padding: 5px;
     text-align: center;
+    border: 1px solid var(--light);
+    border-radius: 1rem;
+    width: 19.5rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+.menu .item img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--green);
+}
+.menu .item .sub-items{
+    height: 10rem;
 }
 .menu .item ul{
     margin: 5px;
     list-style: none;
     display: flex;
     justify-content:space-around ;
+    align-items: center;
+    text-transform: capitalize;
 }
+.menu .item ul .actions{
+    display: flex;
+    justify-content: space-around;
+    width: 5rem;
+}
+.menu .item ul .action-btn{
+    margin: auto;
+    color: var(--green);
+    padding: .3rem;
+    background-color: var(--white);
+    border-radius: .3rem;
+    width: 2rem;
+}
+
 .menu-items .item span{
     margin: 1rem;
 }
