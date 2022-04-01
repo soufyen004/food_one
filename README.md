@@ -1,7 +1,7 @@
 # foody
 
-Status : in progress<br>
-Progress : 80%
+<p>Status : in progress</p>
+<p>Progress : 80%</p>
 
 updated / added :
 
